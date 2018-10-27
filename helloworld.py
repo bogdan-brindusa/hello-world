@@ -1,17 +1,16 @@
-# Prints out 0,1,2,3,4 and then it prints "count value reached 5"
+phonebook = {
+    'John': 1111111,
+    'Jack': 2222222,
+    'Jill': 3333333
+    }
 
-count=0
-while (count < 5):
-    print(count)
-    count += 1
-else:
-    print ("count value reached %d" %(count))
+# write your code here
+phonebook['Jake'] = 4444444
+del phonebook['Jill']
+# phonebook.pop('Jill')
 
-# Prints out 1,2,3,4
-for i in range(1, 10):
-    if (i%5 == 0):
-        break
-    print(i)
-else:
-    print("this is not printed because 'for' loop is terminated")
-    print("because of 'break' but not due to fail in condition")
+# testing code
+if "Jake" in phonebook:
+    print("Jake is listed in the phonebook.")
+if 'Jill' not in phonebook:
+    print('Jill is not listed in the phonebook.')
